@@ -86,7 +86,7 @@ for path in ['shibiao/without_context_step1.json']:
 random.shuffle(data)
 print(nums)
 
-
+'''
 
 print("{} records to be dump".format(len(data)))
 host = hosts.Hosts()
@@ -114,4 +114,5 @@ cursor.executemany(query, data)
 conn.commit()
 conn.close()
 print("all settled and ready to go;")
+'''
 
