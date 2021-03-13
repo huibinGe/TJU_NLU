@@ -1,8 +1,9 @@
 function login() {
   var user_id = document.getElementById('user_id').value;
   var pwd = document.getElementById('pwd').value;
+  var step = document.getElementById('steps').value;
 
-  var data = {'user_id':user_id, 'pwd':pwd};
+  var data = {'user_id':user_id, 'pwd':pwd, 'step':step};
 
   fetch("/validate", {
     method: "POST",

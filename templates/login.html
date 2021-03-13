@@ -15,6 +15,12 @@
           <div id="flash">{% for message in get_flashed_messages() %}{{ message }}{% endfor %}</div>
           <input type="text" name='user_id' placeholder="请输入用户名"/>
           <input type="password" name='pwd' placeholder="请输入密码"/>
+          <select id="setps">
+              <option value ="1">第一轮</option>
+              <option value ="2">第二轮</option>
+              <option value ="3">第三轮</option>
+          </select>
+
           <!-- buttons put outside the form may not successfully redirect to the home page if logged in successfully -->
           <button type="submit">登录</button>
         </form>
